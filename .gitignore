@@ -1,0 +1,38 @@
+# Ignore massive raw and processed data formats
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.bam
+*.sam
+*.vcf
+*.vcf.gz
+*.bcf
+*.bed
+
+# Ignore large R and Python objects (like Seurat or Scanpy objects)
+*.rds
+*.RDS
+*.RData
+*.Rhistory
+*.h5
+*.h5ad
+*.loom
+
+# Ignore general large table formats
+*.csv
+*.tsv
+*.txt.gz
+
+# Ignore entire data and results directories (optional but recommended)
+# This ensures nothing inside these folders is EVER tracked, 
+# except the .gitkeep files we already added.
+*/data/raw/*
+!*/data/raw/.gitkeep
+*/data/processed/*
+!*/data/processed/.gitkeep
+*/results/*
+!*/results/.gitkeep
+
+# Mac OS junk files
+.DS_Store
