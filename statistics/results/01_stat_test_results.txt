@@ -1,0 +1,46 @@
+[1] "======================================="
+[1] "1. T-TEST (Parametric, 2 Groups)"
+[1] "Testing if Miles Per Gallon (mpg) differs by Transmission (am: 0=auto, 1=manual) in mtcars"
+[1] "======================================="
+
+	Welch Two Sample t-test
+
+data:  mpg by am
+t = -3.7671, df = 18.332, p-value = 0.001374
+alternative hypothesis: true difference in means between group 0 and group 1 is not equal to 0
+95 percent confidence interval:
+ -11.280194  -3.209684
+sample estimates:
+mean in group 0 mean in group 1 
+       17.14737        24.39231 
+
+[1] "======================================="
+[1] "2. MANN-WHITNEY U TEST (Non-parametric, 2 Groups)"
+[1] "Same test as above, but using rank-sums instead of raw means"
+[1] "======================================="
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  mpg by am
+W = 42, p-value = 0.001871
+alternative hypothesis: true location shift is not equal to 0
+
+[1] "======================================="
+[1] "3. ANOVA (Parametric, 3+ Groups)"
+[1] "Testing if Sepal Width differs across 3 Iris flower species"
+[1] "======================================="
+             Df Sum Sq Mean Sq F value Pr(>F)    
+Species       2  11.35   5.672   49.16 <2e-16 ***
+Residuals   147  16.96   0.115                   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "======================================="
+[1] "4. KRUSKAL-WALLIS TEST (Non-parametric, 3+ Groups)"
+[1] "Same test as above, but non-parametric"
+[1] "======================================="
+
+	Kruskal-Wallis rank sum test
+
+data:  Sepal.Width by Species
+Kruskal-Wallis chi-squared = 63.571, df = 2, p-value = 1.569e-14
+
