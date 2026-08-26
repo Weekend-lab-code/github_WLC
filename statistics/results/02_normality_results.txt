@@ -1,0 +1,48 @@
+[1] "======================================="
+[1] "SHAPIRO-WILK NORMALITY TEST"
+[1] "H0: The data is normally distributed."
+[1] "Decision Rule:"
+[1] "- If p > 0.05: Normal (Use T-Test / ANOVA)"
+[1] "- If p < 0.05: Not Normal (Use Mann-Whitney / Kruskal-Wallis)"
+[1] "======================================="
+[1] "\n--- 1. Testing mtcars 'mpg' by transmission ---"
+[1] "Auto (am=0):"
+
+	Shapiro-Wilk normality test
+
+data:  mtcars$mpg[mtcars$am == 0]
+W = 0.97677, p-value = 0.8987
+
+[1] "Manual (am=1):"
+
+	Shapiro-Wilk normality test
+
+data:  mtcars$mpg[mtcars$am == 1]
+W = 0.9458, p-value = 0.5363
+
+[1] "\n--- 2. Testing iris 'Sepal.Width' by species ---"
+[1] "Using tapply() to quickly test all 3 species at once:"
+$setosa
+
+	Shapiro-Wilk normality test
+
+data:  X[[i]]
+W = 0.97172, p-value = 0.2715
+
+
+$versicolor
+
+	Shapiro-Wilk normality test
+
+data:  X[[i]]
+W = 0.97413, p-value = 0.338
+
+
+$virginica
+
+	Shapiro-Wilk normality test
+
+data:  X[[i]]
+W = 0.96739, p-value = 0.1809
+
+
