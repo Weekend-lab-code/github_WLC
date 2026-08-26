@@ -1,0 +1,35 @@
+[1] "======================================="
+[1] "HOMOGENEITY OF VARIANCE TESTS"
+[1] "H0: The variances are equal across groups."
+[1] "Decision Rule:"
+[1] "- If p > 0.05: Variances are equal (Use standard t-test/ANOVA)"
+[1] "- If p < 0.05: Variances are unequal (Use Welch's t-test/ANOVA)"
+[1] "======================================="
+[1] "\n--- 1. Testing mtcars 'mpg' by transmission ---"
+[1] "Bartlett's Test:"
+
+	Bartlett test of homogeneity of variances
+
+data:  mpg by am
+Bartlett's K-squared = 3.2259, df = 1, p-value = 0.07248
+
+[1] "Levene's Test:"
+Levene's Test for Homogeneity of Variance (center = median)
+      Df F value  Pr(>F)  
+group  1  4.1876 0.04957 *
+      30                  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "\n--- 2. Testing iris 'Sepal.Width' by species ---"
+[1] "Bartlett's Test:"
+
+	Bartlett test of homogeneity of variances
+
+data:  Sepal.Width by Species
+Bartlett's K-squared = 2.0911, df = 2, p-value = 0.3515
+
+[1] "Levene's Test:"
+Levene's Test for Homogeneity of Variance (center = median)
+       Df F value Pr(>F)
+group   2  0.5902 0.5555
+      147               
