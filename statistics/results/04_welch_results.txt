@@ -1,0 +1,25 @@
+[1] "======================================="
+[1] "1. WELCH'S T-TEST (Unequal Variances, 2 Groups)"
+[1] "======================================="
+
+	Welch Two Sample t-test
+
+data:  mpg by am
+t = -3.7671, df = 18.332, p-value = 0.001374
+alternative hypothesis: true difference in means between group 0 and group 1 is not equal to 0
+95 percent confidence interval:
+ -11.280194  -3.209684
+sample estimates:
+mean in group 0 mean in group 1 
+       17.14737        24.39231 
+
+[1] "======================================="
+[1] "2. WELCH'S ANOVA (Unequal Variances, 3+ Groups)"
+[1] "Uses oneway.test() instead of aov()"
+[1] "======================================="
+
+	One-way analysis of means (not assuming equal variances)
+
+data:  Sepal.Width and Species
+F = 45.012, num df = 2.000, denom df = 97.402, p-value = 1.433e-14
+
