@@ -1,0 +1,4 @@
+"Chromosome","Position","Ref","Alt","rsID","Gene","Significance"
+"chr7",140453136,"A","T","rs114040963","TSPAN2-NGF","Unknown"
+"chr17",7577120,"C","T","rs28934571","TP53","Pathogenic"
+"chr7",55259515,"T","G","rs121434568","EGFR","drug response"
