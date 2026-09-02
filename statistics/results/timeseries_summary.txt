@@ -1,0 +1,26 @@
+=========================================
+CIRCADIAN HARMONIC REGRESSION ANALYSIS
+=========================================
+
+
+Call:
+lm(formula = Expression ~ sin_t + cos_t, data = df)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.7575 -0.4936 -0.1560  0.2387  1.4603 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  10.1712     0.1918  53.040 1.37e-13 ***
+sin_t         3.5322     0.2807  12.583 1.87e-07 ***
+cos_t        -0.0412     0.2613  -0.158    0.878    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.6876 on 10 degrees of freedom
+Multiple R-squared:  0.9406,	Adjusted R-squared:  0.9287 
+F-statistic: 79.18 on 2 and 10 DF,  p-value: 7.394e-07
+
+
+Adjusted R-squared indicates the strength of the 24h rhythm.
