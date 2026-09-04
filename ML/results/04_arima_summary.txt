@@ -1,0 +1,20 @@
+===========================================
+SEASONAL ARIMA FORECASTING REPORT
+===========================================
+
+Series: ts_data 
+ARIMA(0,0,0)(1,1,1)[7] with drift 
+
+Coefficients:
+         sar1     sma1   drift
+      -0.1287  -0.8515  1.2077
+s.e.   0.1378   0.1626  0.0097
+
+sigma^2 = 7.558:  log likelihood = -229.75
+AIC=467.5   AICc=467.96   BIC=477.63
+
+Training set error measures:
+                     ME     RMSE      MAE        MPE     MAPE      MASE
+Training set -0.1689119 2.608042 1.998519 -0.3672649 1.948405 0.2376874
+                    ACF1
+Training set 0.001066757
