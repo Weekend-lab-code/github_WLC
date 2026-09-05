@@ -1,0 +1,14 @@
+===========================================
+NEURAL NETWORK CLASSIFICATION REPORT
+===========================================
+
+Training Steps:  6250 
+Training Error:  29.4916 
+
+--- Test Set Performance ---
+         Actual
+Predicted  0  1
+        0 33 25
+        1 24 68
+
+Test Accuracy: 67.33%
